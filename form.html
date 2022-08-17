@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <form id="data-form" action="product_list.html">
+
+        <div>
+          <label for="productname">PRODUCT NAME</label><br>
+          <input type="text" id="productname" name="productname" />
+        </div>
+
+        <div>
+          <label for="measurement">UNIT OF MEASUREMENT</label><br>
+          <input type="text" id="measurement" name="measurement" />
+        </div>
+
+        <div>
+          <label for="price">PRICE</label><br>
+          <input type="text" id="price" name="price" />
+        </div>
+
+        <div>
+          <label for="description">DESCRIPTION</label><br>
+          <input type="text" id="description" name="description" />
+        </div><br>
+
+        <div class="buttons-container">
+          <input
+            class="button"
+            type="submit"
+            value="Submit"
+            onclick="GetValues()"
+          />
+          <input class="button" type="reset" value="Reset" />
+        </div>
+
+      </form><br>
+
+      
+    </div>
+    <p id="demo"></p>
+    <a href="view.html">Solar System Video</a>
+    <script type="text/javascript" src="form.js"></script>
+  </body>
+</html>
